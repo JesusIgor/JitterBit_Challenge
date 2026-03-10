@@ -12,7 +12,7 @@ pnpm-debug.log*
 
 # environment
 .env
-.env.*
+
 
 # prisma
 prisma/migrations
