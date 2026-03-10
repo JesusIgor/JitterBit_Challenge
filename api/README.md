@@ -10,7 +10,7 @@ npm run dev
 
 OBS: Os critérios opcionais do desafio (Middleware e Swagger) foram criados com auxilio de IA
 
-Necessario realizar um post na rota de login e utilizar o token nas rotas '/order'
+Necessario realizar um post na rota de login (username já setado no código) e utilizar o token nas rotas '/order'
 
 JWT-KEY esta tanto no .env, quanto hardcodada como fallback
 
@@ -75,7 +75,7 @@ Pega os dados do banco e retorna no formato da resposta da API.
 
 ##Autenticacao JWT
 -POST /login
-Envia {"username":"admin","password":"admin123"} e recebe um token JWT.
+Envia {"username":"api-user"} e recebe um token JWT.
 
 -Usar o token
 Adicionar header: Authorization: Bearer {token}
