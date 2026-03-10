@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+//Modelos definiddos a partir do comando "prisma db pull" para refletir a estrutura do banco de dados
+model Order {
+  orderId      String   @id(map: "PK__Order__0809335D8AD3E747") @db.VarChar(50)
+  value        Decimal  @db.Decimal(18, 2)
+  creationDate DateTime
+  items        Items[]
+}
+
+model Items {
+  id        Int     @id(map: "PK__Items__3213E83F6E4921F1") @default(autoincrement())
+  orderId   String  @db.VarChar(50)
+  productId Int
+  quantity  Int
+  price     Decimal @db.Decimal(18, 2)
+  order     Order   @relation(fields: [orderId], references: [orderId], onDelete: Cascade, onUpdate: NoAction, map: "FK_Items_Order")
+}
