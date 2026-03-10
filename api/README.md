@@ -1,9 +1,13 @@
 COMANDOS NECESSARIOS PARA RODAR A API
 
-cd api
+cd api (caso nao esteja no diretório)
+
 npm install
+
 npx prisma generate
+
 npm run dev
+
 (Criar a pasta .env para plugar a string de conexao, seguindo o exemplo deixado na raíz)
 
 ##==============================================================================
