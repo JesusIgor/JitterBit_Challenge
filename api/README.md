@@ -7,11 +7,13 @@ npm run dev
 (Criar a pasta .env para plugar a string de conexao, seguindo o exemplo deixado na raíz)
 
 ##==============================================================================
+
 OBS: Os critérios opcionais do desafio (Middleware e Swagger) foram criados com auxilio de IA
 
 Necessario realizar um post na rota de login e utilizar o token nas rotas '/order'
 JWT-KEY esta tanto no .env, quanto hardcodada como fallback
 Swagger adicionado somente às rotas de '/health' e '/login'
+
 ##==============================================================================
 
 Queries usadas para DB
@@ -42,6 +44,7 @@ INSERT INTO Items (orderId, productId, quantity, price)
 VALUES ('v10089016vdb', 2434, 1, 1000);
 
 ##=============================================================================================
+
 ##Modelos criados a partir do prisma
 -prisma db pull 
 
