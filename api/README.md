@@ -11,7 +11,9 @@ npm run dev
 OBS: Os critérios opcionais do desafio (Middleware e Swagger) foram criados com auxilio de IA
 
 Necessario realizar um post na rota de login e utilizar o token nas rotas '/order'
+
 JWT-KEY esta tanto no .env, quanto hardcodada como fallback
+
 Swagger adicionado somente às rotas de '/health' e '/login'
 
 ##==============================================================================
